@@ -199,7 +199,7 @@ if st.button("🎬 대본 생성하기", type="primary", use_container_width=Tru
                 genai.configure(api_key=st.session_state.gemini_api_key)
                 
                 # 안전한 모델 선택
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel('gemini-2.0-flash-exp')
                 
                 # 프롬프트 생성
                 prompt = f"""
